@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jan 18 14:30:21 2019
-
-@author: szczurpi
-
-Machine Problem 2
 Gen-Tic-Tac-Toe Minimax Search with alpha/beta pruning
 """
 
 import numpy as np
-import random
 import math
 
 # self class is responsible for representing the game board
@@ -174,12 +168,6 @@ class GenGameBoard:
             minimax(0, 0, True, self.marks, self.MIN, self.MAX)
             print("Computer chose: "+str(row)+","+str(col))
             
-# Print out the header info
-print("CLASS: Artificial Intelligence, Lewis University")
-print("NAME: [name]")
-
-
-
 LOST = 0
 WON = 1
 DRAW = 2    
